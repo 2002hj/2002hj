@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		const person = {
+  name: '露露姐姐',
+  age: 1000000,
+  address: {
+    city: 'ChongQing',
+    area: 'NanShan'
+  },
+  title: ['student',{year:2021, title:'GoodStudent'}]
+}
+const {name} =person;
+console.log(name);
+const {age} =person;
+console.log(age);
+const {address:{city}} =person;
+console.log(city);
+const {address:{area}} =person;
+console.log(area);
+const {title:[title1]} =person;
+console.log(title1);
+const {title:[,{year}]} =person;
+console.log(year);
+const {title:[,{title}]} =person;
+console.log(title);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
